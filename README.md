@@ -1,7 +1,7 @@
 
 # Hope Canvas
 
-An NFT Marketplace platform based on the VARA Blockchain where users can upload NFTs to fund impactful social causes.
+An NFT Marketplace platform based on the VARA Blockchain where users can upload and sell NFTs to fund impactful social causes.
 
 ## Building Locally
 
