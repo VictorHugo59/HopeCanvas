@@ -1,0 +1,69 @@
+[package]
+name = "nft-marketplace"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+gstd.workspace = { workspace = true, features = ["debug"] }
+primitive-types = { workspace = true, features = ["scale-info"] }
+nft-io.workspace = true
+market-io.workspace = true
+sp-core-hashing.workspace = true
+ft-main-io.workspace = true
+gear-lib.workspace = true
+async-trait.workspace = true
+
+[dev-dependencies]
+gstd = { workspace = true, features = ["debug"] }
+gtest.workspace = true
+subxt.workspace = true
+gclient.workspace = true
+tokio.workspace = true
+blake2-rfc.workspace = true
+
+[build-dependencies]
+gmeta.workspace = true
+market-io.workspace = true
+gear-wasm-builder.workspace = true
+
+[features]
+# Used for inserting constants with WASM binaries (NOT paths) of the contract in
+# the root crate. Usually these constants used in gclient tests instead of
+# strings with paths to the binaries in the "target" directory. If you don't
+# like this approach or don't use gclient tests, you can freely remove this
+# feature from here and from the rest of the code.
+binary-vendor = []
+
+# It's necessary to include all metawasm crates in the workspace section,
+# otherwise they'll be ignored by Cargo and won't be built.
+[workspace]
+members = ["state"]
+
+[workspace.package]
+version = "0.2.6"
+edition = "2021"
+authors = ["Gear Technologies"]
+license = "MIT"
+
+[workspace.dependencies]
+ft-main-io = { git = "https://github.com/gear-dapps/sharded-fungible-token", tag = "2.1.2" }
+gstd = { git = "https://github.com/gear-tech/gear", rev = "78dfa07" }
+market-io = { path = "io" }
+market-state = { path = "state" }
+hashbrown = "0.13.2"
+async-trait = "0.1.68"
+nft-io = { git = "https://github.com/gear-dapps/non-fungible-token.git", tag = "0.2.11" }
+primitive-types = { version = "0.12.1", default-features = false }
+sp-core-hashing = { version = "8.0.0", default-features = false }
+gear-lib = { git = "https://github.com/gear-dapps/gear-lib", tag = "0.3.7" }
+gmeta = { git = "https://github.com/gear-tech/gear", rev = "78dfa07" }
+gtest = { git = "https://github.com/gear-tech/gear", rev = "78dfa07" }
+gclient = { git = "https://github.com/gear-tech/gear", rev = "78dfa07" }
+subxt = { version = "0.27", default-features = false }
+tokio = "1"
+blake2-rfc = { version = "0.2.18", default-features = false }
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", rev = "78dfa07" }
+scale-info = { version = "2", default-features = false }
+parity-scale-codec = { version = "3", default-features = false }

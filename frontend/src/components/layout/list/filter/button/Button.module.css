@@ -1,0 +1,26 @@
+@use '@gear-js/ui/variables' as *;
+
+.button {
+  background-color:rgb(242, 242, 242 );
+  color:rgb(97, 103, 200) ;
+  border-style: ridge;
+  border-width: 2px;
+  border-color: rgb(97, 103, 200);
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(97, 103, 200);
+    color: white;
+  }
+}
+
+.active {
+  background-color: rgb(242, 242, 242 );
+  color: rgb(97, 103, 200);
+  cursor: default;
+
+  &:hover {
+    background-color: rgb(97, 103, 200);
+    color: white;
+  }
+}

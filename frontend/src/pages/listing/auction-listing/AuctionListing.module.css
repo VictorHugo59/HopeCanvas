@@ -1,0 +1,18 @@
+
+.body {
+  flex: 1;
+  background-color: white;
+  border-color: rgb(97, 103, 200);
+  border-radius: 10px;
+  border-style: ridge;
+  border-width: 2px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(97, 103, 200);
+  font-size: large;
+}
