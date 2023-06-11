@@ -1,26 +1,7 @@
-<p align="center">
-  <a href="https://gitpod.io/#https://github.com/gear-dapps/nft-marketplace" target="_blank">
-    <img src="https://gitpod.io/button/open-in-gitpod.svg" width="240" alt="Gitpod">
-  </a>
-</p>
 
-# NFT marketplace
+# Hope Canvas
 
-[![Build][build_badge]][build_href]
-[![License][lic_badge]][lic_href]
-
-[build_badge]: https://github.com/gear-dapps/nft-marketplace/workflows/Build/badge.svg
-[build_href]: https://github.com/gear-dapps/nft-marketplace/actions/workflows/build.yml
-
-[lic_badge]: https://img.shields.io/badge/License-MIT-success
-[lic_href]: https://github.com/gear-dapps/nft-marketplace/blob/master/LICENSE
-
-
-An example of simple NFT marketplace.
-
-## Prebuilt Binaries
-
-Raw, optimized, and meta WASM binaries can be found in the [Releases section](https://github.com/gear-dapps/nft-marketplace/releases).
+An NFT Marketplace platform based on the VARA Blockchain where users can upload NFTs to fund impactful social causes.
 
 ## Building Locally
 
